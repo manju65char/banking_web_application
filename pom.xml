@@ -16,6 +16,8 @@
 	<description>Banking Microservice project</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<sonar.host.url>http://127.0.0.1:9999/</sonar.host.url>
+		<sonar.login>squ_65dd2dc764c5905e96b713e53ea5a7351acf22b4</sonar.login>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -50,6 +52,12 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!-- SonarQube Plugin -->
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.9.0.2155</version> <!-- Use the latest version -->
 			</plugin>
 		</plugins>
 	</build>
